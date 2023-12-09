@@ -14,7 +14,7 @@ export default function Product() {
   const {addToCartContext}=useContext(CartContext)
 
   const getProductDetails=async ()=>{
-    const {data}=await axios.get(`${import.meta.env.VITE_API_URL}/products/${productId}`)
+    const {data}=await axios.get(`https://ecommerce-node4.vercel.app/products/${productId}`)
     return data.product;
   }
   
